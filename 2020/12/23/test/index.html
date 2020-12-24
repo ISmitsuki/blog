@@ -9,25 +9,25 @@
   <meta name="description" content="fastjson命令执行漏洞&amp;emsp;&amp;emsp;花了9块钱买了台最便宜的华为云学生机，捣鼓一段时间弄好了lamp服务。apache服务默认80端口，需要在安全组里开放入方向规则才能访问公网ip。 &amp;emsp;&amp;emsp;先编译一个用于反弹shell的java文件，得到class文件后上传到服务器的网站里，再上传一个marshalsec-0.0.3-SNAPSHOT-all.jar并开启RMI服">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
-<meta property="og:url" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/index.html">
+<meta property="og:url" content="https://ismitsuki.github.io/blog/2020/12/23/test/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="fastjson命令执行漏洞&amp;emsp;&amp;emsp;花了9块钱买了台最便宜的华为云学生机，捣鼓一段时间弄好了lamp服务。apache服务默认80端口，需要在安全组里开放入方向规则才能访问公网ip。 &amp;emsp;&amp;emsp;先编译一个用于反弹shell的java文件，得到class文件后上传到服务器的网站里，再上传一个marshalsec-0.0.3-SNAPSHOT-all.jar并开启RMI服">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/B996C8B95D1B44869A9C8C48BDA3B0C5">
-<meta property="og:image" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/C8710DC842E34DAE8CBC171950E905CE">
-<meta property="og:image" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/C69F3EED1CD54189AF88D818DDFA1233">
-<meta property="og:image" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/A4B0B50B1C26435C8713F8C8C6738C34">
-<meta property="og:image" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/762BF3C150AA47FCB022A08E2C3D3C49">
+<meta property="og:image" content="https://ismitsuki.github.io/blog/2020/12/23/test/B996C8B95D1B44869A9C8C48BDA3B0C5">
+<meta property="og:image" content="https://ismitsuki.github.io/blog/2020/12/23/test/C8710DC842E34DAE8CBC171950E905CE">
+<meta property="og:image" content="https://ismitsuki.github.io/blog/2020/12/23/test/C69F3EED1CD54189AF88D818DDFA1233">
+<meta property="og:image" content="https://ismitsuki.github.io/blog/2020/12/23/test/A4B0B50B1C26435C8713F8C8C6738C34">
+<meta property="og:image" content="https://ismitsuki.github.io/blog/2020/12/23/test/762BF3C150AA47FCB022A08E2C3D3C49">
 <meta property="article:published_time" content="2020-12-23T15:19:42.000Z">
 <meta property="article:modified_time" content="2020-12-23T15:21:10.559Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/B996C8B95D1B44869A9C8C48BDA3B0C5">
+<meta name="twitter:image" content="https://ismitsuki.github.io/blog/2020/12/23/test/B996C8B95D1B44869A9C8C48BDA3B0C5">
   
-    <link rel="alternate" href="/mitsuki.github.io/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/mitsuki.github.io/favicon.png">
+    <link rel="shortcut icon" href="/blog/favicon.png">
   
   
     
@@ -35,11 +35,11 @@
 
   
   
-<link rel="stylesheet" href="/mitsuki.github.io/css/style.css">
+<link rel="stylesheet" href="/blog/css/style.css">
 
   
     
-<link rel="stylesheet" href="/mitsuki.github.io/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.min.css">
 
   
 <meta name="generator" content="Hexo 5.3.0"></head>
@@ -52,7 +52,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/mitsuki.github.io/" id="logo">Hexo</a>
+        <a href="/blog/" id="logo">Hexo</a>
       </h1>
       
     </div>
@@ -60,19 +60,19 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/mitsuki.github.io/">Home</a>
+          <a class="main-nav-link" href="/blog/">Home</a>
         
-          <a class="main-nav-link" href="/mitsuki.github.io/archives">Archives</a>
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/mitsuki.github.io/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ismitsuki.github.io/mitsuki.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ismitsuki.github.io/blog"></form>
       </div>
     </div>
   </div>
@@ -81,7 +81,7 @@
       <div class="outer">
         <section id="main"><article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/mitsuki.github.io/2020/12/23/test/" class="article-date">
+    <a href="/blog/2020/12/23/test/" class="article-date">
   <time class="dt-published" datetime="2020-12-23T15:19:42.000Z" itemprop="datePublished">2020-12-23</time>
 </a>
     
@@ -125,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ismitsuki.github.io/mitsuki.github.io/2020/12/23/test/" data-id="ckj1lvgjm00013kuphjdedt2v" data-title="test" class="article-share-link">Share</a>
+      <a data-url="https://ismitsuki.github.io/blog/2020/12/23/test/" data-id="ckj29620w00012wuphso0aok9" data-title="test" class="article-share-link">Share</a>
       
       
       
@@ -135,7 +135,7 @@
     
 <nav id="article-nav">
   
-    <a href="/mitsuki.github.io/2020/12/23/test1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/blog/2020/12/23/test1/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
@@ -145,7 +145,7 @@
     </a>
   
   
-    <a href="/mitsuki.github.io/2020/12/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/blog/2020/12/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
@@ -172,7 +172,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/mitsuki.github.io/archives/2020/12/">December 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2020/12/">December 2020</a></li></ul>
     </div>
   </div>
 
@@ -185,15 +185,15 @@
       <ul>
         
           <li>
-            <a href="/mitsuki.github.io/2020/12/23/test1/">test1</a>
+            <a href="/blog/2020/12/23/test1/">test1</a>
           </li>
         
           <li>
-            <a href="/mitsuki.github.io/2020/12/23/test/">test</a>
+            <a href="/blog/2020/12/23/test/">test</a>
           </li>
         
           <li>
-            <a href="/mitsuki.github.io/2020/12/23/hello-world/">Hello World</a>
+            <a href="/blog/2020/12/23/hello-world/">Hello World</a>
           </li>
         
       </ul>
@@ -218,25 +218,25 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/mitsuki.github.io/" class="mobile-nav-link">Home</a>
+    <a href="/blog/" class="mobile-nav-link">Home</a>
   
-    <a href="/mitsuki.github.io/archives" class="mobile-nav-link">Archives</a>
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
     
 
 
-<script src="/mitsuki.github.io/js/jquery-3.4.1.min.js"></script>
+<script src="/blog/js/jquery-3.4.1.min.js"></script>
 
 
 
   
-<script src="/mitsuki.github.io/fancybox/jquery.fancybox.min.js"></script>
+<script src="/blog/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-<script src="/mitsuki.github.io/js/script.js"></script>
+<script src="/blog/js/script.js"></script>
 
 
 
